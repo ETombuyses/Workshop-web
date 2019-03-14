@@ -40,72 +40,75 @@ h1,h2,h3,h4,p,ul,div,span{
 
 body{
   font-family: "Marston", sans-serif;
-  overflow: hidden;
-  background-color: #282828;
+
+}
+main{
+  display: flex;
+  flex-direction: row;
+
 }
 
+nav{
+  width: 60vw;
+}
 nav ul{
   display: flex;
   flex-direction: row;
-  position: absolute;
+  background-color: #282828;
 }
-nav ul li{
-  padding: 30px;
-  font-size: 30px;
-  color: white
+  nav ul li{
+    padding: 30px;
+    font-size: 30px;
+    color: white
+  }
+    .personnage{
+      color: red;
+    }
+      nav ul li:hover{
+        color: red;
+      }
+
+
+.leftContent{
+  color: white;
+  background-color: #282828;
+  width:60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.personnage{
-  color: red;
-}
-nav ul li:hover{
-  color: red;
-}
+  .leftContent p{
+    font-size: 20px;
+    width: 600px;
+    text-align: center;
+    padding: 30px;
+  }
+    .leftContent iframe{
+    }
+
 
 .rigthContent{
-  color: white;
-  margin-top:50px;
-  z-index: 3;
-}
-
-.rigthContent h1{
-  margin-left: 20%;
-}
-
-.rigthContent p{
-  font-size: 20px;
-  width: 600px;
-  text-align: center;
-  padding: 30px;
-  margin-left: 7%;
-}
-.rigthContent iframe{
-  margin-left:100px;
-}
-.red{
-  height: 100vh;
   width: 40vw;
-  background-color: red;
-  transform: translateX(150%);
-  z-index: 1;
-}
-.leftContent{
-  width: 100vw;
-  position: absolute;
   flex-direction: column;
   display: flex;
-  align-items: flex-end;
-  z-index: 2;
+  align-items: center;
+  background-color: #E93030;
+  z-index: 1;
 }
-.leftContent h2{
-  font-size: 50px;
-  color: #282828;
-}
-.leftContent h3{
-  color: white;
-  font-size: 25px;
-}
-.leftContent img{
-  width: 35vw;
-  bottom: 0;
-  position: fixed;
-}
+  .rigthContent h2{
+    justify-content: flex-start;
+    font-size: 50px;
+    color: #282828;
+    transform: rotate(90deg);
+  }
+    .rigthContent h3{
+      color: white;
+      font-size: 25px;
+      width: 400px;
+    }
+      .rigthContent img{
+        width: 35vw;
+        bottom: 0;
+        position: fixed;
+      } 
