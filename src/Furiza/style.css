@@ -40,18 +40,22 @@ h1,h2,h3,h4,p,ul,div,span{
 
 body{
   font-family: "Marston", sans-serif;
-  background-image: url(./img/bg.png);
-  background-size: cover;
+  overflow: hidden;
+  background-color: #282828;
 }
 
 nav ul{
   display: flex;
   flex-direction: row;
+  position: absolute;
 }
 nav ul li{
   padding: 30px;
   font-size: 30px;
-  color: white;
+  color: white
+}
+.personnage{
+  color: red;
 }
 nav ul li:hover{
   color: red;
@@ -60,6 +64,7 @@ nav ul li:hover{
 .rigthContent{
   color: white;
   margin-top:50px;
+  z-index: 3;
 }
 
 .rigthContent h1{
@@ -73,7 +78,34 @@ nav ul li:hover{
   padding: 30px;
   margin-left: 7%;
 }
-
+.rigthContent iframe{
+  margin-left:100px;
+}
+.red{
+  height: 100vh;
+  width: 40vw;
+  background-color: red;
+  transform: translateX(150%);
+  z-index: 1;
+}
+.leftContent{
+  width: 100vw;
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+.leftContent h2{
+  font-size: 50px;
+  color: #282828;
+}
+.leftContent h3{
+  color: white;
+  font-size: 25px;
+}
 .leftContent img{
-  width: 30vw;
+  width: 35vw;
+  bottom: 0;
+  position: fixed;
 }
