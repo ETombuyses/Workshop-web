@@ -66,9 +66,12 @@ nav ul{
     .personnage{
       color: red;
     }
-      nav ul li:hover{
-        color: red;
+      .histoire{
+        text-decoration: none;
       }
+        nav ul li:hover{
+          color: red;
+        }
 
 
 .leftContent{
@@ -112,6 +115,7 @@ nav ul{
     transform: rotate(90deg);
   }
     .rigthContent h3{
+      text-align: center;
       color: white;
       font-size: 35px;
       width: 80%;
