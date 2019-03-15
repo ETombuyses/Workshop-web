@@ -2,7 +2,6 @@
 
 body{
   margin: 0;
-  overflow: hidden;
 }
 
 h1,h2,h3,h4,p,ul,div,span{
@@ -41,7 +40,7 @@ h1,h2,h3,h4,p,ul,div,span{
 
 body{
   font-family: "Marston", sans-serif;
-
+  overflow: hidden;
 }
 main{
   display: flex;
@@ -106,12 +105,13 @@ nav ul{
   background-color: #E93030;
   z-index: 1;
 }
-  .rigthContent h2{
-    position: absolute;
-    left: 51%;
+  .rigthContent h2 {
+    position: relative;
+    left: -133px;
     top: 25%;
     font-size: 50px;
     color: #282828;
+    align-self: flex-start;
     transform: rotate(90deg);
   }
     .rigthContent h3{
@@ -126,3 +126,11 @@ nav ul{
         bottom: 0;
         position: fixed;
       } 
+
+@media(min-width:1650px){
+  .rigthContent img{
+      width: 28vw;
+      bottom: 0;
+      position: fixed;
+    } 
+}

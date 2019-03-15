@@ -2,7 +2,6 @@
 
 body{
     margin: 0;
-    overflow: hidden;
   }
   
   h1,h2,h3,h4,p,ul,div,span{
@@ -42,7 +41,8 @@ body{
   
   body{
     font-family: "Marston", sans-serif;
-  
+    overflow: hidden;
+
   }
   main{
     display: flex;
@@ -109,12 +109,13 @@ body{
     background-color: #E93030;
     z-index: 1;
   }
-    .rigthContent h2{
-      position: absolute;
-      left: 53%;
+    .rigthContent h2 {
+      position: relative;
+      left: -113px;
       top: 25%;
       font-size: 50px;
       color: #282828;
+      align-self: flex-start;
       transform: rotate(90deg);
     }
       .rigthContent h3{
@@ -136,3 +137,18 @@ body{
             position: fixed;
             left: 60%;
           }
+
+@media(min-width:1650px){
+  .rigthContent .arthure{
+    width: 27vw;
+    bottom: 0;
+    position: fixed;
+    left: 75%;
+ }
+    .rigthContent .dutch{
+      width: 27vw;
+      bottom: 0;
+      position: fixed;
+      left: 60%;
+    }
+}
