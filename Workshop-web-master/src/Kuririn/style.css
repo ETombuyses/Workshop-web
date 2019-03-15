@@ -1,0 +1,113 @@
+/* --- RESET CSS --- */
+
+body{
+  margin: 0;
+}
+
+h1,h2,h3,h4,p,ul,div,span{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 100;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* --- FIN RESET --- */
+
+
+/* --- FONT FACE --- */
+
+@font-face {
+  font-family: "Marston";
+  src: url("fonts/Marston.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marston";
+  src: url("fonts/Marston-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* --- FIN FONT FACE --- */
+
+
+body {
+	font-family: "Marston", sans-serif;
+	background-color: #282828;
+}
+
+nav {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul li {
+	padding: 30px;
+	font-size: 30px;
+	color: white
+}
+
+.personnage {
+	color: red;
+}
+
+nav ul li:hover {
+	color: red;
+}
+
+.firstContent {
+  left: 50%;
+
+}
+
+.firstContent h1 {
+	color: white;
+  font-size: 35px;
+  margin-left: 25%;
+}
+
+.firstContent img {
+  width: 35vw;
+  position: relative;
+  top: 100px;
+  margin-left: 35%;
+}
+
+.secondContent {
+	color: white;
+	position: absolute;
+	width: 100%;
+  margin-top: 100px;
+  
+  
+}
+
+.secondContent iframe{
+  width: 80VW;
+  position: relative;
+  height: 80vh;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  
+}
+
+.secondContent h2{
+  margin-left: 44%;
+}
+
+
+
+
