@@ -11,24 +11,13 @@ liElts.forEach(li => {
   })
 });
 
-
-liElts[0].addEventListener('click', ()=>{
-  articleElts.forEach(article => {
-    article.classList.add('moved');
+for (let i = 0; i < liElts.length; i++) {
+  liElts[i].addEventListener('click', ()=>{
+    articleElts.forEach(article => {
+      article.classList.add('moved');
+    })
+    articleElts[i].classList.remove('moved');
   })
-    articleElts[0].classList.remove('moved');
-})
+}
 
-liElts[1].addEventListener('click', ()=>{
-  articleElts.forEach(article => {
-    article.classList.add('moved');
-  })
-    articleElts[1].classList.remove('moved');
-})
 
-liElts[2].addEventListener('click', ()=>{
-  articleElts.forEach(article => {
-    article.classList.add('moved');
-  })
-    articleElts[2].classList.remove('moved');
-})
