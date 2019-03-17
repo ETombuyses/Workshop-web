@@ -69,7 +69,7 @@ article {
   align-items: center;
   text-align: center;  
   font-size: 22px; 
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .moved {
@@ -119,11 +119,45 @@ nav ul li:hover {
 
 
 aside {
+  position: relative;
   top: 0;
   right: 0;
   height: 100vh;
   width: 35vw;
   background-color: red;
+  color: white;
+  transition: transform 0.8s ease-in-out;
+}
+
+aside h2 {
+  position: absolute;
+  color: #282828;
+  font-size: 50px;
+  transform-origin: 0 0; 
+  transform: rotate(90deg) translateY(-80%) translateX(50px);
+  white-space: nowrap;
+  transition: transform 0.8s ease-in-out;
+}
+
+
+
+aside p {
+  position: absolute;
+  width: 60%;
+  font-size: 28px;
+  text-align: left;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  transition: transform 0.8s ease-in-out;
+}
+
+aside img {
+  position: absolute;
+  max-width: 90%;
+  bottom: 0;
+  left: 10%;
+  transition: transform 0.8s ease-in-out;
 }
 
 
@@ -140,4 +174,20 @@ button {
   text-decoration: none;
   font-family: "Marston";
   font-size: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.is-up {
+  transform: rotate(90deg) translateY(-80%) translateX(-1000px);
+}
+
+.is-right {
+  transform: translateX(1000px);
+}
+
+.is-btm {
+  transform: translateY(1000px);
 }
